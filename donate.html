@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | J-Care Charity Foundation</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Reuse the donate section styles from index, but adjust for a dedicated page */
+    .donate-page-header {
+      padding: 150px 0 50px;
+      text-align: center;
+      background: var(--bg-cream);
+    }
+    .donate-container {
+      display: flex;
+      gap: 50px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px 100px;
+    }
+    .donate-info {
+      flex: 1;
+    }
+    .donate-form-wrapper {
+      flex: 1;
+    }
+    .donate-card {
+      position: relative;
+      background: var(--bg-white);
+      padding: 50px;
+      border-radius: 40px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+      text-align: center;
+      width: 100%;
+    }
+    .impact-point-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: var(--bg-white);
+      padding: 18px 20px;
+      border-radius: var(--border-radius-card);
+      margin-bottom: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    }
+    .impact-point-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(46, 125, 50, 0.1);
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .impact-point-card h4 {
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+      font-family: var(--font-body);
+      font-weight: 600;
+    }
+    .impact-point-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    @media (max-width: 900px) {
+      .donate-page-header {
+        padding: 110px 0 30px;
+      }
+      .donate-container {
+        flex-direction: column;
+        padding: 30px 15px 60px;
+        gap: 35px;
+      }
+      .donate-card {
+        padding: 30px 20px;
+        border-radius: 28px;
+      }
+    }
+    @media (max-width: 520px) {
+      .donate-card {
+        padding: 24px 16px;
+      }
+      .donate-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body style="background: var(--bg-cream);">
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" style="background: var(--bg-cream);">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo-removebg-preview.png" alt="J-Care Logo" style="height: 40px; width: auto;">
+        J-CARE
+      </a>
+      <div class="nav-links">
+        <a href="programs.html">Programs</a>
+        <a href="about.html">About Us</a>
+        <a href="impact.html">Stories</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="donate.html" class="btn btn-primary">Donate</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <a href="index.html" class="drawer-logo">
+        <img src="images/logo-removebg-preview.png" alt="J-Care Logo" style="height: 36px; width: auto;">
+        J-CARE
+      </a>
+      <button class="drawer-close" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="about.html">About Us</a>
+      <a href="impact.html">Stories</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="blog.html">Blog & Updates</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="drawer-actions">
+      <a href="donate.html" class="btn btn-primary" style="width: 100%; text-align: center;">Donate Now</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <header class="donate-page-header container">
+    <h1 class="section-title text-primary">MAKE A DIFFERENCE</h1>
+  </header>
+
+  <section class="donate-container">
+    
+    <div class="donate-info">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Why Your Support Matters</h2>
+      <p style="color: var(--text-muted); margin-bottom: 30px;">Every contribution directly impacts the lives of orphans, vulnerable children, women, and widows in Nigeria. Whether it's paying for school fees, providing food, or supporting a widow's small business, your generosity brings hope.</p>
+      
+      <h3 style="font-size: 1.3rem; margin-bottom: 20px;">How Your Gift Creates Impact</h3>
+
+      <div class="impact-point-card">
+        <div class="impact-point-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div>
+          <h4>Education Support</h4>
+          <p>Covers school fees, scholastic materials, books, and uniforms for vulnerable children.</p>
+        </div>
+      </div>
+
+      <div class="impact-point-card">
+        <div class="impact-point-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <div>
+          <h4>Feeding & Nutrition</h4>
+          <p>Provides essential food items (rice, beans, provisions) to keep hungry families sustained.</p>
+        </div>
+      </div>
+
+      <div class="impact-point-card">
+        <div class="impact-point-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div>
+          <h4>Widows & Women Empowerment</h4>
+          <p>Offers skill acquisitions and seed capital so widows and women can run micro-businesses.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="donate-form-wrapper">
+      <div class="donate-card">
+        <h3>Choose Donate</h3>
+        <div class="donate-toggle">
+          <button class="active">ONE-TIME</button>
+          <button>MONTHLY</button>
+        </div>
+        <div class="donate-grid">
+          <button class="donate-amount">₦5,000</button>
+          <button class="donate-amount">₦10,000</button>
+          <button class="donate-amount active">₦20,000</button>
+          <button class="donate-amount">₦50,000</button>
+          <button class="donate-amount">₦100,000</button>
+          <button class="donate-amount">₦500,000</button>
+        </div>
+        <input type="number" class="donate-custom" placeholder="Other Amount (₦)">
+        
+        <div style="text-align: left; margin-bottom: 20px; font-size: 0.9rem;">
+          <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <input type="checkbox" checked>
+            <span>I want to cover the transaction fees</span>
+          </label>
+        </div>
+        
+        <button class="btn btn-primary" style="width: 100%; margin-bottom: 15px;">DONATE VIA PAYSTACK</button>
+        <button class="btn btn-outline" style="width: 100%; border-color: #0070ba; color: #0070ba;">DONATE VIA PAYPAL (USD)</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
+            <img src="images/logo-removebg-preview.png" alt="J-Care Logo" style="height: 40px; width: auto; filter: brightness(10);">
+            J-CARE
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>ABOUT</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>GET INVOLVED</h4>
+          <ul>
+            <li><a href="get-involved.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SUPPORT</h4>
+          <ul>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="footer-tagline">STORIES THAT SPEAK.<br>ACTIONS THAT COUNT.</h2>
+      <div class="footer-bottom">
+        <p style="opacity: 0.7; font-size: 0.9rem;">&copy; 2026 J-Care Charity Foundation. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

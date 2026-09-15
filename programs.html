@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Programs | J-Care Charity Foundation</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .programs-header {
+      padding: 150px 0 50px;
+      text-align: center;
+      background: var(--bg-cream);
+    }
+    .program-detail-card {
+      display: flex;
+      background: var(--bg-white);
+      border-radius: var(--border-radius-card);
+      overflow: hidden;
+      margin-bottom: 50px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+    }
+    .program-detail-card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .program-img-box {
+      flex: 1;
+      min-height: 300px;
+    }
+    .program-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .program-text-box {
+      flex: 1;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .program-text-box h2 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+    .program-text-box ul {
+      margin-left: 20px;
+      margin-top: 15px;
+      color: var(--text-muted);
+    }
+    .program-text-box li {
+      margin-bottom: 10px;
+    }
+    @media (max-width: 900px) {
+      .programs-header {
+        padding: 110px 0 35px;
+      }
+      .program-detail-card, .program-detail-card:nth-child(even) {
+        flex-direction: column;
+        margin-bottom: 35px;
+      }
+      .program-img-box {
+        min-height: 220px;
+        max-height: 300px;
+      }
+      .program-text-box {
+        padding: 30px 20px;
+      }
+      .program-text-box h2 {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" style="background: var(--bg-cream);">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo-removebg-preview.png" alt="J-Care Logo" style="height: 40px; width: auto;">
+        J-CARE
+      </a>
+      <div class="nav-links">
+        <a href="programs.html" style="color: var(--primary);">Programs</a>
+        <a href="about.html">About Us</a>
+        <a href="impact.html">Stories</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="donate.html" class="btn btn-primary">Donate</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <a href="index.html" class="drawer-logo">
+        <img src="images/logo-removebg-preview.png" alt="J-Care Logo" style="height: 36px; width: auto;">
+        J-CARE
+      </a>
+      <button class="drawer-close" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="programs.html" class="active">Programs</a>
+      <a href="about.html">About Us</a>
+      <a href="impact.html">Stories</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="blog.html">Blog & Updates</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="drawer-actions">
+      <a href="donate.html" class="btn btn-primary" style="width: 100%; text-align: center;">Donate Now</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <header class="programs-header container">
+    <h1 class="section-title text-primary">WHAT WE DO</h1>
+    <p style="max-width: 600px; margin: 0 auto; color: var(--text-muted);">We support communities through 7 core pillars, turning lived experience into lasting change.</p>
+  </header>
+
+  <section class="container" style="padding-bottom: 100px;">
+    
+    <!-- Program 1 -->
+    <div class="program-detail-card">
+      <div class="program-img-box">
+        <img src="images/Payment of school fees/IMG-20260731-WA0123.jpg" alt="Educational Support">
+      </div>
+      <div class="program-text-box">
+        <h2>1. Educational Support</h2>
+        <p>Empowering children with quality education so they can have a better life and a good future.</p>
+        <ul>
+          <li><strong>Payment of Children School Fees:</strong> to increase opportunities for children to access education, improve learning, make stable and focused.</li>
+          <li><strong>Provision of Scholastic materials:</strong> Textbooks, exercise books, pens, pencils, erasers, sharpeners, rulers, school uniforms, school bags, and school sandals.</li>
+          <li><strong>Conduct School Outreaches:</strong> to check up on children's current educational status and devise means to support those in dire needs.</li>
+          <li><strong>Extramural programs:</strong> for children in terminal classes.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Program 2 -->
+    <div class="program-detail-card">
+      <div class="program-img-box">
+        <img src="images/Second Outreach August 2021/Raw food distribution for children/IMG-20260731-WA0050.jpg" alt="Feeding">
+      </div>
+      <div class="program-text-box">
+        <h2>2. Feeding</h2>
+        <p>Providing essential nutrition to those who need it most.</p>
+        <ul>
+          <li><strong>Provision of raw food items:</strong> like rice, beans, garri, spaghetti, indomie, drinks, water, and other kinds of food items for children.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Program 3 -->
+    <div class="program-detail-card">
+      <div class="program-img-box">
+        <img src="images/Third Outreach December 2021/IMG-20260731-WA0062.jpg" alt="Welfare">
+      </div>
+      <div class="program-text-box">
+        <h2>3. Welfare</h2>
+        <p>Ensuring basic needs are met for a life of dignity.</p>
+        <ul>
+          <li><strong>Provision of clothes, shoes, and other useful materials:</strong> for children and widows, giving the children, especially, a sense of belonging amongst their peers.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Program 4 -->
+    <div class="program-detail-card">
+      <div class="program-img-box">
+        <img src="images/2022 to date/IMG-20260731-WA0104.jpg" alt="Healthcare">
+      </div>
+      <div class="program-text-box">
+        <h2>4. Healthcare for All</h2>
+        <p>Providing medical access and health education to vulnerable populations.</p>
+      </div>
+    </div>
+
+    <!-- Program 5 -->
+    <div class="program-detail-card">
+      <div class="program-img-box">
+        <img src="images/Children Carnival/IMG-20260731-WA0147.jpg" alt="Socialise">
+      </div>
+      <div class="program-text-box">
+        <h2>5. Socialise & Interact</h2>
+        <p>Building community, joy, and spiritual grounding.</p>
+        <ul>
+          <li><strong>Organise Carnivals & Excursions:</strong> for children's relaxation.</li>
+          <li><strong>Christmas Party.</strong></li>
+          <li><strong>Church Programs:</strong> to develop children to have faith in God and build trust in Him for a better and very brighter future.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Program 6 -->
+    <div class="program-detail-card">
+      <div class="program-img-box">
+        <img src="images/Encouragement to small businesses/IMG-20260731-WA0129.jpg" alt="Skills">
+      </div>
+      <div class="program-text-box">
+        <h2>6. Skills Acquisition</h2>
+        <p>Practical empowerment for long-term success.</p>
+        <ul>
+          <li><strong>Organise DIY training programs:</strong> for children to develop their skills in useful items for school and on the long run improve their educational status.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Program 7 -->
+    <div class="program-detail-card">
+      <div class="program-img-box">
+        <img src="images/Third Outreach December 2021/IMG-20260731-WA0064.jpg" alt="Women and Widows">
+      </div>
+      <div class="program-text-box">
+        <h2>7. Women and Widows</h2>
+        <p>Supporting mothers and widows to build sustainable livelihoods.</p>
+        <ul>
+          <li><strong>Skills acquisition:</strong> e.g., Soap making, gele tying, etc.</li>
+          <li><strong>Small-scale business support.</strong></li>
+          <li><strong>Transport fare supports.</strong></li>
+          <li><strong>Organises programs for prayers and counselling:</strong> to stabilise their emotions.</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
+            <img src="images/logo-removebg-preview.png" alt="J-Care Logo" style="height: 40px; width: auto; filter: brightness(10);">
+            J-CARE
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>ABOUT</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>GET INVOLVED</h4>
+          <ul>
+            <li><a href="get-involved.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SUPPORT</h4>
+          <ul>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="footer-tagline">STORIES THAT SPEAK.<br>ACTIONS THAT COUNT.</h2>
+      <div class="footer-bottom">
+        <p style="opacity: 0.7; font-size: 0.9rem;">&copy; 2026 J-Care Charity Foundation. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved | J-Care Charity Foundation</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .get-involved-header {
+      padding: 150px 0 50px;
+      text-align: center;
+      background: var(--bg-cream);
+    }
+    .form-section {
+      max-width: 800px;
+      margin: 0 auto 100px;
+      background: var(--bg-white);
+      padding: 50px;
+      border-radius: var(--border-radius-card);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+    }
+    .form-group {
+      margin-bottom: 25px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: var(--text-dark);
+    }
+    .form-control {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: var(--border-radius-input);
+      font-size: 1rem;
+      font-family: var(--font-body);
+      background: var(--bg-cream);
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    .form-row {
+      display: flex;
+      gap: 20px;
+    }
+    .form-row .form-group {
+      flex: 1;
+    }
+    @media (max-width: 768px) {
+      .get-involved-header {
+        padding: 110px 0 30px;
+      }
+      .form-section {
+        padding: 28px 20px;
+        margin-bottom: 60px;
+        border-radius: 24px;
+      }
+      .form-row {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+  </style>
+</head>
+<body style="background: var(--bg-cream);">
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" style="background: var(--bg-cream);">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo-removebg-preview.png" alt="J-Care Logo" style="height: 40px; width: auto;">
+        J-CARE
+      </a>
+      <div class="nav-links">
+        <a href="programs.html">Programs</a>
+        <a href="about.html">About Us</a>
+        <a href="impact.html">Stories</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="donate.html" class="btn btn-primary">Donate</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <a href="index.html" class="drawer-logo">
+        <img src="images/logo-removebg-preview.png" alt="J-Care Logo" style="height: 36px; width: auto;">
+        J-CARE
+      </a>
+      <button class="drawer-close" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="about.html">About Us</a>
+      <a href="impact.html">Stories</a>
+      <a href="get-involved.html" class="active">Get Involved</a>
+      <a href="blog.html">Blog & Updates</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="drawer-actions">
+      <a href="donate.html" class="btn btn-primary" style="width: 100%; text-align: center;">Donate Now</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <header class="get-involved-header container">
+    <h1 class="section-title text-primary">JOIN THE MOVEMENT</h1>
+    <p style="max-width: 600px; margin: 0 auto; color: var(--text-muted);">Whether you want to volunteer your time, partner with us, or support our outreaches, your involvement brings hope to the hopeless.</p>
+  </header>
+
+  <section class="container">
+    <div class="form-section">
+      <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 30px; text-align: center;">Volunteer With Us</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="interest">Area of Interest</label>
+          <select id="interest" class="form-control" required>
+            <option value="">Select an area...</option>
+            <option value="education">Educational Support / Teaching</option>
+            <option value="healthcare">Healthcare Outreach</option>
+            <option value="welfare">Welfare & Feeding Distribution</option>
+            <option value="skills">Skills Training (DIY, Soap making, etc.)</option>
+            <option value="events">Event Organization (Carnivals, Parties)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Why do you want to volunteer?</label>
+          <textarea id="message" rows="4" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">SUBMIT APPLICATION</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
+            <img src="images/logo-removebg-preview.png" alt="J-Care Logo" style="height: 40px; width: auto; filter: brightness(10);">
+            J-CARE
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>ABOUT</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>GET INVOLVED</h4>
+          <ul>
+            <li><a href="get-involved.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SUPPORT</h4>
+          <ul>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="footer-tagline">STORIES THAT SPEAK.<br>ACTIONS THAT COUNT.</h2>
+      <div class="footer-bottom">
+        <p style="opacity: 0.7; font-size: 0.9rem;">&copy; 2026 J-Care Charity Foundation. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
