@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .programs-header {
-      padding: 150px 0 50px;
+      padding: 150px 20px 50px;
       text-align: center;
       background: var(--bg-cream);
     }
@@ -30,6 +30,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
     }
     .program-text-box {
       flex: 1;
@@ -39,35 +40,67 @@
       justify-content: center;
     }
     .program-text-box h2 {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       font-size: 2.5rem;
+      line-height: 1.2;
       color: var(--primary);
+    }
+    .program-text-box p {
+      line-height: 1.6;
+      margin-bottom: 16px;
+      color: var(--text-dark);
     }
     .program-text-box ul {
       margin-left: 20px;
-      margin-top: 15px;
+      margin-top: 5px;
       color: var(--text-muted);
     }
     .program-text-box li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      line-height: 1.55;
+    }
+    .program-text-box li:last-child {
+      margin-bottom: 0;
     }
     @media (max-width: 900px) {
       .programs-header {
-        padding: 110px 0 35px;
+        padding: 130px 20px 40px;
       }
       .program-detail-card, .program-detail-card:nth-child(even) {
         flex-direction: column;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
       }
       .program-img-box {
+        width: 100%;
+        height: 220px;
         min-height: 220px;
-        max-height: 300px;
+        max-height: 250px;
+        flex: none;
       }
       .program-text-box {
-        padding: 30px 20px;
+        width: 100%;
+        flex: none;
+        padding: 26px 20px 30px;
+        display: block;
       }
       .program-text-box h2 {
-        font-size: clamp(1.6rem, 5vw, 2.2rem);
+        font-size: clamp(1.45rem, 5vw, 1.95rem);
+        line-height: 1.25;
+        margin-bottom: 14px;
+        word-wrap: break-word;
+      }
+      .program-text-box p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 14px;
+      }
+      .program-text-box ul {
+        margin-left: 18px;
+      }
+      .program-text-box li {
+        font-size: 0.9rem;
+        line-height: 1.55;
+        margin-bottom: 10px;
       }
     }
   </style>
@@ -113,7 +146,6 @@
       <a href="about.html">About Us</a>
       <a href="impact.html">Stories</a>
       <a href="get-involved.html">Get Involved</a>
-      <a href="blog.html">Blog & Updates</a>
       <a href="contact.html">Contact</a>
     </div>
     <div class="drawer-actions">
